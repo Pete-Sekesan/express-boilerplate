@@ -1,12 +1,14 @@
 {
   "name": "express-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate project used for starting new projects!",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
-    "test": "mocha -- require test/setup.js",
-    "dev": "nodemon src/server.js"
+    "test": "mocha --require test/setup.js",
+    "dev": "nodemon src/server.js",
+    "predeploy": "npm audit",
+    "deploy": "git push heroku main"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +25,16 @@
     "mocha": "^8.2.1",
     "nodemon": "^2.0.7",
     "supertest": "^6.1.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pete-Sekesan/express-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pete-Sekesan/express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Pete-Sekesan/express-boilerplate#readme"
 }
